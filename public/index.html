@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Plemená psov</title>
+        <meta charset="UTF-8" />
+            <link rel="stylesheet" type="text/css" href="style.css">
+        <style>
+            body {
+                font-family: "Segoe UI", sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="header">
+            <h2 id="nadpis">Automatický identifikátor plemien psov</h2>
+            <h3 id="podnadpis">...zistite si plemená psov, ktoré neviete rozpoznať...</h3>
+          <div>
+            <img id="stclogo" src="stc.png">
+          </div>
+          <div>
+            <img id="msftlogo" src="microsoft.png">
+          </div>
+        </div>
+
+
+        <div id="">
+            <h2>Custom vision API</h2>
+        </div>
+
+        <div id="content">
+
+            <div id="intro">
+                <p id="intro-p">Ak chcete zistiť plemeno akéhokoľvek psa, s pomocou nášho predikačného API sa vám to môže podariť. 
+                    <br>
+                V databáze máme 25 plemien psov zo všetkých kútov planéty.</p>
+            </div>
+<center>
+        <div id="main">
+            <input type="file" name="data" id="data" />
+            <br/>
+            <img id="photo" width="250" height="250" hidden />
+            <p id="img_data"></p>
+            <p id="output"></p>
+        </div>
+</center>
+        </div>
+
+        <div id="footer">
+            <p id="footer-t">Copyright © 2021 Študenti ŠTC</p>
+        </div>
+
+        <script src="api_setup.js"></script>
+    </body>
+</html>

@@ -1,0 +1,119 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Segoe UI";
+}
+
+body{
+	background-color: #e5e7ea;
+}
+
+#header{
+	width: 100%;
+	height: 140px;
+	margin-top: 0px;
+	background-color: #7cbb00;
+	border-bottom: 1px #6e9c16 solid;
+	position: fixed;
+	margin-bottom: 10px;
+	grid-area: header;
+}
+
+#nadpis{
+	text-transform: uppercase;
+	color: #fff;
+	position: absolute;
+	left: 700px;
+	margin-top: 30px;
+	font-size: 35px;
+}
+
+#podnadpis{
+	font-style: italic;
+	color: #fff;
+	position: absolute;
+	left: 720px;
+	margin-top: 75px;
+}
+
+#stclogo{
+	display: inline-block;
+	vertical-align: middle;
+	width: 275px;
+	position: absolute;
+	left: 310px;
+	top: 48px;
+}
+
+#msftlogo{
+	display: inline-block;
+	vertical-align: middle;
+	width: 255px;
+	position: absolute;
+	left: 24px;
+	top: 10px;
+}
+
+#intro{
+	margin-top: 30px;
+}
+
+#intro-p{
+	font-size: 20px;
+	text-align: center;
+}
+
+#main{
+	margin-top: 25px;
+}
+
+#data{
+}
+
+input[type=file]{
+        background-color: #7cbb00;
+        border: none;
+        color: #fff;
+        padding: 20px 50px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+}
+
+#output{
+	font-weight: bold;
+}
+
+#content{
+	grid-area: cont;
+}
+
+#footer{
+	grid-area: footer;
+	bottom: 0;
+	padding: 20px;
+	background-color: #7cbb00;
+	margin-top: 10px;
+}
+
+#footer-t{
+	text-align: center;
+	color: #fff;
+}
+
+
+
+
+body{
+	display: grid;
+	width: 100% !important;
+	height: 100vh;
+	margin-top: 0px;
+	grid-gap: 20px;
+	grid-template-columns: 100px 1fr 1fr 1fr 1fr 1fr 1fr 100px;
+	grid-template-rows: 140px auto 80px;
+	grid-template-areas: 
+						"header header header header header header header header"
+						". cont cont cont cont cont cont ."
+						"footer footer footer footer footer footer footer footer";
+}
